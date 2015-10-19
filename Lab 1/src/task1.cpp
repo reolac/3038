@@ -45,6 +45,8 @@ int main(int argc, char** argv)
 {
 	int x, y;
 	
+
+
 	cout << "Enter two intergers : ";
 
 	cin >> x >> y;

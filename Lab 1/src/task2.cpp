@@ -51,8 +51,8 @@ int main(int argc, char** argv)
 		cout << sum;
 	}
 	else {
-		cout << "Number of arguments are incorrect, please enter an even amount. Program exiting.";
-		return (0);
+		cerr << "Number of arguments are incorrect, please enter an even amount. Program exiting.";
+		return (1);
 	}
 
     // Exit code
