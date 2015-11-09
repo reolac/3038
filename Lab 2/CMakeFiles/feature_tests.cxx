@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
   const char features[] = {"\n"
+=======
+  const char features[] = {""
+>>>>>>> 66c8883e51230ca3baf71b3bdf2b545ada73fd30
 "CXX_FEATURE:"
 #if _MSC_VER >= 1800
 "1"
