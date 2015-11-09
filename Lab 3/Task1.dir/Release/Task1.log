@@ -1,0 +1,17 @@
+﻿Build started 20/10/2015 12:17:30.
+     1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 3\Task1.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/reola/Downloads/Lab 3/Lab 3/cmake/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 3\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\reola\Downloads\Lab 3\Lab 3\cmake\..\include" /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"Task1.dir\Release\\" /Fd"Task1.dir\Release\vc140.pdb" /Gd /TP /errorReport:prompt "C:\Users\reola\Downloads\Lab 3\Lab 3\src\TestUtils.cpp"
+         TestUtils.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 3\Release\Task1.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 3/Release/Task1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 3/Release/Task1.lib" /MACHINE:X64  /machine:x64 Task1.dir\Release\TestUtils.obj
+     1>TestUtils.obj : error LNK2019: unresolved external symbol "void __cdecl swap(int &,int &)" (?swap@@YAXAEAH0@Z) referenced in function main
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 3\Release\Task1.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 3\Task1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.82
