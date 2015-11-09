@@ -1,0 +1,4 @@
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/task1.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/task2.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/ALL_BUILD.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/ZERO_CHECK.dir

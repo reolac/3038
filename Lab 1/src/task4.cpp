@@ -31,7 +31,8 @@ using namespace std;
 //******************************************************************************
 //	Global variables
 //******************************************************************************
-
+float* numbers;
+int no_Numbers;
 
 //******************************************************************************
 //	Function declaration
@@ -41,47 +42,57 @@ using namespace std;
 //******************************************************************************
 //	Implementation
 //******************************************************************************
+void swap(int i)
+{
+	float temp = numbers[i];
+	numbers[i] = numbers[i + 1];
+	numbers[i + 1] = temp;
+	cout << "running swap";
+}
+
+void sort()
+{
+	float current;
+	float next;
+	cout << "running sort";
+	for (int i = 0; i < no_Numbers; i++)
+	{
+		current = numbers[i];
+		next = numbers[i + 1];
+
+		if (next > current)
+		{
+			swap(i);
+			
+		}
+		cout << numbers[i];
+		cout << "\n";
+	}
+}
+
+
+
 int main()
 {
-	int no_Numbers;
 
 	cout << "Enter amount of numbers to sum : ";
 	cin >> no_Numbers;
 
-	float* numbers = new float[no_Numbers];
+	numbers = new float[no_Numbers];
 	
 	cout << "Enter numbers to sum : ";
 
-	for (int i = 0; i <= no_Numbers ; i++)
+	for (int i = 0; i < no_Numbers ; i++)
 	{
-		cin >> *numbers;
-
-		*numbers++;
+		cin >> numbers[i];
 	}
 
+	sort();
 
-	*numbers--;
-
-	float current;
-	float next;
-	float temp;
 	cout << "Printing out stored numbers \n";
-	for (int i = 0; i <= no_Numbers; i++)
+	for (int i = 0; i < no_Numbers; i++)
 	{	
-		current = *numbers;
-		*numbers--;
-		next = *numbers;
-		
-		
-		if (next > current)
-		{
-			*numbers++;
-			*numbers = next;
-			*numbers--;
-			*numbers = current;
-		}
-
-		cout << *numbers;
+		cout << numbers[i];
 		cout << "\n";
 	}
 
@@ -90,3 +101,4 @@ int main()
     // Exit code
     return (0);
 }
+

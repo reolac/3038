@@ -1,0 +1,16 @@
+﻿Build started 26/10/2015 19:15:51.
+     1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab1A\Task1-solution1.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/reola/Downloads/Lab1-Answers (1)/cmake/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\reola\Documents\GitHub\Computer-Vision\Lab1A\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"Task1-solution1.dir\Debug\\" /Fd"Task1-solution1.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Users\reola\Downloads\Lab1-Answers (1)\src\task1-solution1.cpp"
+         task1-solution1.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Lab1A\Debug\Task1-solution1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/Debug/Task1-solution1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/Debug/Task1-solution1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug "Task1-solution1.dir\Debug\task1-solution1.obj"
+         Task1-solution1.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Lab1A\Debug\Task1-solution1.exe
+     1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab1A\Task1-solution1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.14
