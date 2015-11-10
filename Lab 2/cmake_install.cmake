@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+# Install script for directory: C:/Users/reola/Downloads/Lab2-Answers/cmake
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Lab2")
+=======
 # Install script for directory: C:/Users/reola/Downloads/Lab 2/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "C:/Program Files/Lab2")
+>>>>>>> 66c8883e51230ca3baf71b3bdf2b545ada73fd30
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

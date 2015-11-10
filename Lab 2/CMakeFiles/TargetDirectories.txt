@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/task1.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/task2.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/ALL_BUILD.dir
+=======
 C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/ALL_BUILD.dir
 C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/Task1.dir
+>>>>>>> 66c8883e51230ca3baf71b3bdf2b545ada73fd30
 C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 2/CMakeFiles/ZERO_CHECK.dir

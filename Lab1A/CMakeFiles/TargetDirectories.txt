@@ -1,0 +1,8 @@
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/Task1-solution1.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/Task1-solution2.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/Task1-solution3.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/ALL_BUILD.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/Task2.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/Task3.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/ZERO_CHECK.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab1A/CMakeFiles/Task4.dir

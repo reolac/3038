@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\include\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3695DB75-4C9C-3CC4-8B70-C61722726894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7E641485-A410-3190-937B-F062C1CD803E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICP3038-Assignment1\snow.pgm">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
