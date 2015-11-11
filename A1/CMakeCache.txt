@@ -143,6 +143,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
+//If true, cmake will use relative paths in makefiles and projects.
+CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -166,14 +169,16 @@ LIBRARY_OUTPUT_PATH:PATH=
 # INTERNAL cache entries
 ########################
 
+//Stored GUID
+ALL_BUILD_GUID_CMAKE:INTERNAL=746CB8AF-C2AD-4053-9E95-83AAFA5DAB4B
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=c:/Users/reola/Documents/GitHub/Computer-Vision/A1
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=4
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=3
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/cmake.exe
 //Path to cpack program executable.
@@ -240,6 +245,8 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=1
+//number of local generators
 CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
 CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
@@ -247,7 +254,7 @@ CMAKE_RC_COMPILER_WORKS:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_FLAGS
 CMAKE_RC_FLAGS-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=C:/Program Files (x86)/CMake/share/cmake-3.4
+CMAKE_ROOT:INTERNAL=C:/Program Files (x86)/CMake/share/cmake-3.3
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -275,6 +282,22 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Suppress Warnings that are meant for the author of the CMakeLists.txt
 // files.
 CMAKE_SUPPRESS_DEVELOPER_WARNINGS:INTERNAL=FALSE
+//ADVANCED property for variable: CMAKE_USE_RELATIVE_PATHS
+CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Stored GUID
+SG_Filter_CMake Rules_GUID_CMAKE:INTERNAL=21DB7E63-4558-46E9-B236-C004D4399C16
+//Stored GUID
+SG_Filter_Header Files_GUID_CMAKE:INTERNAL=5A414656-31D2-4F9F-8752-5C77609D4722
+//Stored GUID
+SG_Filter_Object Files_GUID_CMAKE:INTERNAL=226B4B7C-9A2C-46B3-BF56-53E0AE54F194
+//Stored GUID
+SG_Filter_Resources_GUID_CMAKE:INTERNAL=91461D35-F664-4F66-833B-CA3FEFB3EED7
+//Stored GUID
+SG_Filter_Source Files_GUID_CMAKE:INTERNAL=4AB1F4F4-83B3-4DBB-9356-BFF974466F86
+//Stored GUID
+ZERO_CHECK_GUID_CMAKE:INTERNAL=8C3A22AA-BD7B-45B1-B8B7-BA67D4415D66
+//Stored GUID
+assignment1_GUID_CMAKE:INTERNAL=27007EE6-357F-45BB-8395-0C6469F8E018
 

@@ -28,8 +28,10 @@
 #include <sstream> // Head file for stringstream
 #include <fstream> // Head file for filestream
 #include <algorithm>
+#include <iostream>
 
 #include "Image.h"
+
 
 
 //------------------
@@ -434,12 +436,13 @@ void Image::loadPGM(const char* aFileName)
 		// Invalid format
 		if (image_type != "P2")
 		{
+			loadRAW(aFileName);
 			// Build the error message
-			std::stringstream error_message;
-			error_message << "Invalid file (\"" << aFileName << "\")";
+			//std::stringstream error_message;
+			//error_message << "Invalid file (\"" << aFileName << "\")";
 
 			// Throw an error
-			throw (error_message.str());
+			//throw (error_message.str());
 		}
 		// Valid format
 		else
@@ -622,3 +625,40 @@ void Image::setPixel(unsigned int i, unsigned int j, unsigned char aValue)
 	m_p_image[j * m_width + i] = aValue;
 }
 
+
+//-----------------------------------------------
+void Image::loadRAW(const std::string& aFileName)
+//-----------------------------------------------
+{
+	std::string line;
+	float word;
+	std::ifstream myfile(aFileName);
+	int numberOfLines = 0;
+	int numberOfWords = 0;
+	if (myfile.is_open())
+	{
+		while (getline(myfile, line))
+		{
+
+			numberOfLines++;
+		}
+		myfile.close();
+		myfile.open(aFileName);
+		while (!myfile.eof())
+		{
+			myfile >> word;
+			numberOfWords++;
+		}
+
+		myfile.close();
+	}
+
+	numberOfWords /= numberOfLines;
+
+	std::cout << numberOfLines << "\n";
+	std::cout << numberOfWords;
+
+
+	throw ("hello");
+
+}

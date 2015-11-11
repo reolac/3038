@@ -1,10 +1,38 @@
-﻿Build started 09/11/2015 21:11:18.
+﻿Build started 10/11/2015 11:22:43.
      1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
          Checking Build System
-         CMake does not need to re-run because C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/generate.stamp is up-to-date.
+         CMake is re-running because C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/generate.stamp is out-of-date.
+           the file 'C:/Users/reola/Documents/GitHub/Computer-Vision/A1/ICP3038-Assignment1/cmake/CMakeLists.txt'
+           is newer than 'C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/generate.stamp.depend'
+           result='-1'
+         -- The C compiler identification is MSVC 19.0.23026.0
+         -- The CXX compiler identification is MSVC 19.0.23026.0
+         -- Check for working C compiler using: Visual Studio 14 2015
+         -- Check for working C compiler using: Visual Studio 14 2015 -- works
+         -- Detecting C compiler ABI info
+         -- Detecting C compiler ABI info - done
+         -- Check for working CXX compiler using: Visual Studio 14 2015
+         -- Check for working CXX compiler using: Visual Studio 14 2015 -- works
+         -- Detecting CXX compiler ABI info
+         -- Detecting CXX compiler ABI info - done
+         -- Detecting CXX compile features
+         -- Detecting CXX compile features - done
+         CMake Warning (dev) in CMakeLists.txt:
+           No cmake_minimum_required command is present.  A line of code such as
+         
+             cmake_minimum_required(VERSION 3.3)
+         
+           should be added at the top of the file.  The version specified may be lower
+           if you wish to support older CMake versions for this project.  For more
+           information run "cmake --help-policy CMP0000".
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         -- Configuring done
+         -- Generating done
+         -- Build files have been written to: C:/Users/reola/Documents/GitHub/Computer-Vision/A1
      1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ZERO_CHECK.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.17
+Time Elapsed 00:00:08.14

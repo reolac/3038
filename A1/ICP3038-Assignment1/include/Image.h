@@ -316,6 +316,9 @@ public:
 	//------------------------------------------------------------------------
 	void setPixel(unsigned int i, unsigned int j, unsigned char aValue);
 
+
+	void loadRAW(const std::string& aFileName);
+
 //******************************************************************************
 private:
     /// Number of pixel along the horizontal axis

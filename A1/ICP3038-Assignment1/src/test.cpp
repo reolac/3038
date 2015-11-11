@@ -20,8 +20,10 @@
 //	Include
 //******************************************************************************
 #include <sstream>
+#include <fstream>
 #include <iostream>
 #include <exception>
+using namespace std;
 
 #include "Image.h"
 
@@ -47,6 +49,7 @@ int main(int argc, char** argv)
             test_image.loadPGM(argv[1]);
         
 			test_image += 2;
+
 			new_image = test_image + test_image;
 
 

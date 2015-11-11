@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp">
@@ -18,15 +18,10 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{3695DB75-4C9C-3CC4-8B70-C61722726894}</UniqueIdentifier>
+      <UniqueIdentifier>{4AB1F4F4-83B3-4DBB-9356-BFF974466F86}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{7E641485-A410-3190-937B-F062C1CD803E}</UniqueIdentifier>
+      <UniqueIdentifier>{5A414656-31D2-4F9F-8752-5C77609D4722}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ICP3038-Assignment1\snow.pgm">
-      <Filter>Source Files</Filter>
-    </None>
   </ItemGroup>
 </Project>
