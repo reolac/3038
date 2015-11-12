@@ -1,17 +1,27 @@
-﻿Build started 10/11/2015 12:56:25.
-     1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\assignment1.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\cmake\..\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"assignment1.dir\Debug\\" /Fd"assignment1.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp"
+﻿Build started 12/11/2015 04:22:03.
+     1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\assignment1.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/reola/Documents/GitHub/Computer-Vision/A1/ICP3038-Assignment1/cmake/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\cmake\..\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"assignment1.dir\Debug\\" /Fd"assignment1.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp" "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\test.cpp"
          Image.cpp
-     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(500): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(558): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(617): warning C4244: 'return': conversion from 'float' to 'unsigned char', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(354): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(355): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(497): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(555): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(606): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(615): warning C4244: 'return': conversion from 'float' to 'unsigned char', possible loss of data
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(675): warning C4018: '<': signed/unsigned mismatch
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\src\Image.cpp(710): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+         test.cpp
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\Debug\assignment1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/Debug/assignment1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/Debug/assignment1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug assignment1.dir\Debug\Image.obj
          assignment1.dir\Debug\test.obj
          assignment1.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\Debug\assignment1.exe
-     1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\assignment1.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\assignment1.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.01
+Time Elapsed 00:00:01.11

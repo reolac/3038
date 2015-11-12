@@ -3,13 +3,13 @@
 *
 *	@file		Image.cpp
 *
-*	@brief		BRIEF DESCRIPTION ABOUT THE CONTENT OF THE FILE.
+*	@brief		This file holds the logic for all of the functions and the overloads for the Image class. Requires a tester to test.
 *
 *	@version	1.0
 *
 *	@date		27/10/2015
 *
-*	@author		Michael Smith
+*	@author		Michael P. J. Smith <eeu213>
 *
 *
 ********************************************************************************
@@ -28,46 +28,50 @@
 #include <sstream> // Head file for stringstream
 #include <fstream> // Head file for filestream
 #include <algorithm>
-#include <iostream>
 
-#include "Image.h"
+#include "Image.h" // the image class declaration file
 
 
 
 //------------------
-Image::Image() :
+Image::Image() : // constructor
 	//------------------
-	m_width(0),
+	m_width(0), // sets all elements of the Image class to 0
 	m_height(0),
 	m_p_image(0)
 	//------------------
-{ // NOTHIND TO DO HERE
+{
+
 }
 
 
 //--------------------------------
-Image::Image(const Image& anImage) :
+Image::Image(const Image& anImage) : // constructor with initalization
 	//--------------------------------
-	m_width(anImage.m_width),
-	m_height(anImage.m_height),
-	m_p_image(anImage.m_p_image)
+	m_width(anImage.m_width), // copies the width of anImage to this image
+	m_height(anImage.m_height), // copies the height of anImage to this image
+	m_p_image(anImage.m_p_image) // copies the data pointer of anImage to this image
+	//------------------
 {
-	// IT IS THE CONSTRUCTOR, USE AN INITIALISATION LIST
-	// PUT CODE HERE TO COPY THE DATA
+	m_p_image = new float[anImage.m_width * anImage.m_height]; // initalize a new array to store data for this image
+	// m_width * m_height is the total amount of pixels (resolution) thus the required size of the array
+	for (unsigned int i(0); i < m_width * m_height; i++) 
+	{
+		m_p_image[i] = anImage.m_p_image[i]; // copy array data from anImage to this 
+	}	
 }
 
 
 //-------------
-Image::~Image()
+Image::~Image() // destructor
 //-------------
 {
-	// ADD CODE HERE TO RELEASE THE MEMORY
-	if (m_p_image) delete[] m_p_image;
+	if (m_p_image) delete[] m_p_image; // if m_p_image has been allocated, delete it
 }
 
 
 //-------------------
-void Image::destroy()
+void Image::destroy() 
 //-------------------
 {
 	// Memory has been dynamically allocated
@@ -87,226 +91,200 @@ void Image::destroy()
 
 
 //-------------------------------------------
-Image& Image::operator=(const Image& anImage)
+Image& Image::operator=(const Image& anImage) // image1 = image2
 //-------------------------------------------
 {
-	// ADD CODE HERE TO COPY THE DATA
+	if (m_p_image) delete[] m_p_image; // if m_p_image has been allocated, delete it
 
-	m_width = anImage.m_width;
-	m_height = anImage.m_height;
+	m_width = anImage.m_width; // copies the width of anImage to this image
+	m_height = anImage.m_height; // copies the height of anImage to this image
+	m_p_image = new float[anImage.m_width * anImage.m_height]; // creates a new array to store the image data in
 
-	if (m_p_image) delete[] m_p_image;
-
-	float* m_p_copy = new float[m_width * m_height];
-	m_p_image = m_p_copy;
-
-	float* p_copy(anImage.m_p_image);
-
-	for (unsigned int i(0); i < m_width * m_height; i++)
+	for (unsigned int i(0); i < m_width * m_height; i++) // m_width * m_height = resolution = total required elements for this picture
 	{
-		*m_p_copy++ = *p_copy++;
+		m_p_image[i] = anImage.m_p_image[i]; // copies data from anImage to this image, element by element
 	}
-
-	return (*this);
-
-}
-
-
-//------------------------------------------
-Image Image::operator+(const Image& anImage)
-//------------------------------------------
-{
-	// ADD CODE HERE TO ADD TWO IMAGES TO EACH OTHER,
-	// AND RETURN THE RESULTING IMAGE
-
-	Image temp;
-
-
-	temp.m_height = std::min(anImage.m_height, m_height);
-	temp.m_width = std::min(anImage.m_width, m_width);
 	
-	temp.m_p_image = new float[temp.m_width * temp.m_height];
-
-	for (unsigned int i(0); i < temp.m_width * temp.m_height; i++)
-	{
-		temp.m_p_image[i] = m_p_image[i] + anImage.m_p_image[i];
-	}
-
-	return (temp);
+	return (*this); // returns a reference to this image
 }
 
 
 //------------------------------------------
-Image Image::operator-(const Image& anImage)
+Image Image::operator+(const Image& anImage) // image1 = image2 + image 3
 //------------------------------------------
 {
-	// ADD CODE HERE TO SUBTRACT AN anImage TO THE CURRENT ONE,
-	// AND RETURN THE RESULTING IMAGE
+	Image new_image; // create a new image to return
 
-	Image temp;
+	new_image.m_height = std::min(anImage.m_height, m_height); // get the min height out of the two images and store it as the height
+	new_image.m_width = std::min(anImage.m_width, m_width); // get the min width out of the two images and store it as the width
+	// this ensures that if images are of different sizes all of the points can still be allocated against each other 
 
-	temp.m_height = std::min(anImage.m_height, m_height);
-	temp.m_width = std::min(anImage.m_width, m_width);
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height]; // creates a new aray to store the image data
 
-	temp.m_p_image = new float[temp.m_width * temp.m_height];
-
-	for (unsigned int i(0); i < temp.m_width * temp.m_height; i++)
+	for (unsigned int i(0); i < new_image.m_width * new_image.m_height; i++) // new_image.m_width * new_image.m_height = resolution = total required elements for this picture
 	{
-		temp.m_p_image[i] = m_p_image[i] - anImage.m_p_image[i];
+		new_image.m_p_image[i] = m_p_image[i] + anImage.m_p_image[i]; // adds data from one image to the data from the other image and stores it in the new image, element by element
 	}
 
-	return (temp);
+	return (new_image); // returns this new image
+}
+
+
+//------------------------------------------
+Image Image::operator-(const Image& anImage) // image1 = image2 - image3
+//------------------------------------------
+{
+	Image new_image; 
+
+	new_image.m_height = std::min(anImage.m_height, m_height); 
+	new_image.m_width = std::min(anImage.m_width, m_width); 
+
+
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height]; 
+
+	for (unsigned int i(0); i < new_image.m_width * new_image.m_height; i++)
+	{
+		new_image.m_p_image[i] = m_p_image[i] - anImage.m_p_image[i]; // subracts data from one image from the data of the other image and stores it in the new image, element by element
+	}
+
+	return (new_image);
 }
 
 
 //--------------------------------------------
-Image& Image::operator+=(const Image& anImage)
+Image& Image::operator+=(const Image& anImage) // image1 += image2
 //--------------------------------------------
 {
-	// ADD CODE HERE TO ADD TWO IMAGES TO EACH OTHER,
-	// SAVE THE RESULT IN THE CURRENT IMAGE,
-	// AND RETURN A REFERENCE TO THE CURRENT IMAGE
+	m_height = std::min(anImage.m_height, m_height); // gets the min height from this image and the other image
+	m_width = std::min(anImage.m_width, m_width); // gets the min width from this image and the other image
 
-
-	unsigned int minH = std::min(anImage.m_height, m_height);
-	unsigned int minW = std::min(anImage.m_width, m_width);
-
-
-	for (unsigned int i(0); i < minH * minW; i++)
+	for (unsigned int i(0); i < m_height * m_width; i++)
 	{
-		m_p_image[i] += anImage.m_p_image[i];
+		m_p_image[i] += anImage.m_p_image[i]; // adds values from the other image onto the existing values in this image, element by element
+	}
+
+	return (*this); // return a reference to this image
+}
+
+
+//--------------------------------------------
+Image& Image::operator-=(const Image& anImage) // image1 -= image2
+//--------------------------------------------
+{
+	m_height = std::min(anImage.m_height, m_height);
+	m_width = std::min(anImage.m_width, m_width);
+
+
+	for (unsigned int i(0); i < m_height * m_height; i++)
+	{
+		m_p_image[i] -= anImage.m_p_image[i]; // subtracts the existing values in this image by the values in the other image, element by element
 	}
 
 	return (*this);
 }
 
 
-//--------------------------------------------
-Image& Image::operator-=(const Image& anImage)
-//--------------------------------------------
-{
-	// ADD CODE HERE TO SUBTRACT AN anImage TO THE CURRENT ONE,
-	// SAVE THE RESULT IN THE CURRENT IMAGE,
-	// AND RETURN A REFERENCE TO THE CURRENT IMAGE
-
-	unsigned int minH = std::min(anImage.m_height, m_height);
-	unsigned int minW = std::min(anImage.m_width, m_width);
-
-
-	for (unsigned int i(0); i < minH * minW; i++)
-	{
-		m_p_image[i] -= anImage.m_p_image[i];
-	}
-
-	return (*this);
-}
-
-
 //----------------------------------
-Image Image::operator+(float aValue)
+Image Image::operator+(float aValue) // image1[19] = 50; image1[20] = 100; image2 = image1 + 4; image2[19] = 54; image2[20] = 104; 
 //----------------------------------
 {
-	// ADD CODE HERE TO ADD aValue TO EACH PIXEL OF THE CURRENT IMAGE,
-	// AND RETURN THE RESULTING IMAGE
+	Image new_image;
 
-	Image temp;
-	//if (temp.m_p_image) delete[] temp.m_p_image;
+	new_image.m_height = m_height; // copies height of current image to new image 
+	new_image.m_width = m_width; // copies width of current image to new image
 
-	temp.m_height = m_height;
-	temp.m_width = m_width;
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height];
 
-	temp.m_p_image = new float[temp.m_width * temp.m_height];
-
-	for (unsigned int i(0); i < temp.m_width * temp.m_height; i++)
+	for (unsigned int i(0); i < new_image.m_width * new_image.m_height; i++)
 	{
-		temp.m_p_image[i] = m_p_image[i] + aValue;
+		new_image.m_p_image[i] = m_p_image[i] + aValue; // adds a set value onto every element of the original image, element by element, then stores it in a new image
 	}
 
-	return (temp);
+	return (new_image); // returns this new image
 
 }
 
 
 //----------------------------------
-Image Image::operator-(float aValue)
+Image Image::operator-(float aValue) // image1[19] = 50; image1[20] = 100; image2 = image1 - 4; image2[19] = 46; image2[20] = 96;
 //----------------------------------
 {
-	// ADD CODE HERE TO SUBTRACT aValue FROM EACH PIXEL OF THE CURRENT IMAGE,
-	// AND RETURN THE RESULTING IMAGE
+	Image new_image;
 
-	Image temp;
+	new_image.m_height = m_height;
+	new_image.m_width = m_width;
 
-	temp.m_height = m_height;
-	temp.m_width = m_width;
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height];
 
-	temp.m_p_image = new float[temp.m_width * temp.m_height];
-
-	for (unsigned int i(0); i < temp.m_width * temp.m_height; i++)
+	for (unsigned int i(0); i < new_image.m_width * new_image.m_height; i++)
 	{
-		temp.m_p_image[i] = m_p_image[i] - aValue;
+		new_image.m_p_image[i] = m_p_image[i] - aValue; // subtracts every element of the original image by a set value, element by element, then stores it in a new image
 	}
 
-	return (temp);
+	return (new_image);
 }
 
 
 //----------------------------------
-Image Image::operator*(float aValue)
+Image Image::operator*(float aValue) // image1[19] = 50; image1[20] = 100; image2 = image1 * 2; image2[19] = 100; image2[20] = 200;
 //----------------------------------
 {
-	// ADD CODE HERE TO MULTIPLY aValue TO EACH PIXEL OF THE CURRENT IMAGE,
-	// AND RETURN THE RESULTING IMAGE
+	Image new_image;
 
-	Image temp;
+	new_image.m_height = m_height;
+	new_image.m_width = m_width;
 
-	temp.m_height = m_height;
-	temp.m_width = m_width;
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height];
 
-	temp.m_p_image = new float[temp.m_width * temp.m_height];
-
-	for (unsigned int i(0); i < temp.m_width * temp.m_height; i++)
+	for (unsigned int i(0); i < new_image.m_width * new_image.m_height; i++)
 	{
-		temp.m_p_image[i] = m_p_image[i] * aValue;
+		new_image.m_p_image[i] = m_p_image[i] * aValue; // multiplies every element of the original image by a set value, element by element, then stores it in a new image
 	}
 
-	return (temp);
+	return (new_image);
 }
 
 
 //----------------------------------
-Image Image::operator/(float aValue)
+Image Image::operator/(float aValue) // image1[19] = 50; image1[20] = 100; image2 = image1 / 2; image2[19] = 25; image2[20] = 50;
 //----------------------------------
 {
-	// ADD CODE HERE TO DIVIDE EACH PIXEL OF THE CURRENT IMAGE BY aValue,
-	// AND RETURN THE RESULTING IMAGE
+	Image new_image;
 
-	Image temp;
+	new_image.m_height = m_height;
+	new_image.m_width = m_width;
 
-	temp.m_height = m_height;
-	temp.m_width = m_width;
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height];
 
-	temp.m_p_image = new float[temp.m_width * temp.m_height];
-
-	for (unsigned int i(0); i < temp.m_width * temp.m_height; i++)
+	for (unsigned int i(0); i < new_image.m_width * new_image.m_height; i++)
 	{
-		temp.m_p_image[i] = m_p_image[i] / aValue;
+		new_image.m_p_image[i] = m_p_image[i] / aValue; // divides every element of the original image by a set value, element by element, then stores it in a new image
 	}
 
-	return (temp);
+	return (new_image);
 }
 
 
 //-----------------------------------
-Image& Image::operator+=(float aValue)
+Image& Image::operator+=(float aValue) // image[19] = 50; image[20] = 100; image + 4; image[19] = 54; image[20] = 104;
 //-----------------------------------
 {
-	// ADD CODE HERE TO ADD aValue TO EACH PIXEL OF THE CURRENT IMAGE,
-	// SAVE THE RESULT IN THE CURRENT IMAGE,
-	// AND RETURN A REFERENCE TO THE CURRENT IMAGE
-
 	for (unsigned int i(0); i < m_width * m_height; i++)
 	{
-		m_p_image[i] += aValue;
+		m_p_image[i] += aValue; // adds a value onto every value of this image, element by element
+	}
+
+	return (*this); // returns a reference to this image
+}
+
+
+//------------------------------------
+Image& Image::operator-=(float aValue) // image[19] = 50; image[20] = 100; image - 4; image[19] = 46; image[20] = 96;
+//------------------------------------
+{
+	for (unsigned int i(0); i < m_width * m_height; i++)
+	{
+		m_p_image[i] -= aValue; // subtracts a value from every element in the image
 	}
 
 	return (*this);
@@ -314,16 +292,12 @@ Image& Image::operator+=(float aValue)
 
 
 //------------------------------------
-Image& Image::operator-=(float aValue)
+Image& Image::operator*=(float aValue) // image[19] = 50; image[20] = 100; image * 2; image[19] = 100; image[20] = 200;
 //------------------------------------
 {
-	// ADD CODE HERE TO SUBTRACT aValue FROM EACH PIXEL OF THE CURRENT IMAGE,
-	// SAVE THE RESULT IN THE CURRENT IMAGE,
-	// AND RETURN A REFERENCE TO THE CURRENT IMAGE
-
 	for (unsigned int i(0); i < m_width * m_height; i++)
 	{
-		m_p_image[i] -= aValue;
+		m_p_image[i] *= aValue; // multiplies every element of the image by a value, element by element
 	}
 
 	return (*this);
@@ -331,33 +305,12 @@ Image& Image::operator-=(float aValue)
 
 
 //------------------------------------
-Image& Image::operator*=(float aValue)
+Image& Image::operator/=(float aValue) // image[19] = 50; image[20] = 100; image / 2; image[19] = 25; image[20] = 50;
 //------------------------------------
 {
-	// ADD CODE HERE TO DIVIDE EACH PIXEL OF THE CURRENT IMAGE BY aValue
-	// SAVE THE RESULT IN THE CURRENT IMAGE,
-	// AND RETURN A REFERENCE TO THE CURRENT IMAGE
-
 	for (unsigned int i(0); i < m_width * m_height; i++)
 	{
-		m_p_image[i] *= aValue;
-	}
-
-	return (*this);
-}
-
-
-//------------------------------------
-Image& Image::operator/=(float aValue)
-//------------------------------------
-{
-	// ADD CODE HERE TO SUBTRACT aValue FROM EACH PIXEL OF THE CURRENT IMAGE,
-	// SAVE THE RESULT IN THE CURRENT IMAGE,
-	// AND RETURN A REFERENCE TO THE CURRENT IMAGE
-
-	for (unsigned int i(0); i < m_width * m_height; i++)
-	{
-		m_p_image[i] /= aValue;
+		m_p_image[i] /= aValue; // divides every element of the image by a value, element by element
 	}
 
 	return (*this);
@@ -365,15 +318,12 @@ Image& Image::operator/=(float aValue)
 
 
 //----------------------
-Image Image::operator!()
+Image Image::operator!() // image[0] = 255; image[1] = 138; image = !image; image[0] = 0; image[1] = 117;  #(255 - 0) (255 - 138)
 //----------------------
 {
-	// ADD CODE HERE TO COMPUTE THE NEGATIVE IMAGE OF THE CURRENT IMAGE,
-	// AND RETURN THE RESULTING IMAGE
-
 	for (unsigned int i(0); i < m_width * m_height; i++)
 	{
-		m_p_image[i] = 255 - m_p_image[i];
+		m_p_image[i] = 255 - m_p_image[i]; // sets every element to 255 and subtracts what the original value was (high values become low, low becomes high)
 	}
 
 	return (*this);
@@ -381,10 +331,57 @@ Image Image::operator!()
 
 
 //------------------------------
-float Image::getMaxValue() const
+float Image::getMaxValue() const // searches the data to find the max value
 //------------------------------
 {
 	return (*std::max_element(&m_p_image[0], &m_p_image[m_width * m_height]));
+}
+
+
+//------------------------------
+float Image::getMinValue() const // searches the data to find the min value
+//------------------------------
+{
+	return (*std::min_element(&m_p_image[0], &m_p_image[m_width * m_height]));
+}
+
+
+//----------------------------------------------------------------
+void Image::normaliseImage() const // evenly spread the data between 0 and 255 maximizing all data points
+//----------------------------------------------------------------
+{
+	unsigned int maxValue = getMaxValue(); // gets and stores the highest pixel in the image
+	unsigned int minValue = getMinValue(); // gets and stores the lowest pixel in the image
+
+	for (unsigned int i(0); i < m_width * m_height; i++)
+	{ // makes the min value zero (minus all elements by the min value); divide it by the difference between the maximum and minimum value 
+		m_p_image[i] = 255 * ((m_p_image[i] - minValue) / (maxValue - minValue)); // multiply that by the highest possible number for the data (255)
+	}
+}
+
+
+//------------------------------------------------------------------------------------------------------------
+Image Image::getROI(unsigned int startingX, unsigned int endingX, unsigned int startingY, unsigned int endingY) 
+//------------------------------------------------------------------------------------------------------------
+{ // coordinates to create a rectangular/square bounding box and copy the data inside that box to a new array
+	Image new_image;
+	
+	unsigned int width = endingX - startingX; // get the width of the new image by subtracting the ending column by the starting column
+	unsigned int height = endingY - startingY; // get the height of the image by subtracting the ending row by the starting row
+	
+	new_image.m_width = width;
+	new_image.m_height = height;	
+	new_image.m_p_image = new float[new_image.m_width * new_image.m_height];
+	
+	for (unsigned int i(0); i < width; i++) // traverse the columns of the image
+	{
+		for (unsigned int j(0); j < height; j++) // traverse the rows of the image
+		{  // get the data from the original data by using an offset on the coordinates
+			new_image.m_p_image[j * width + i] = getPixel(i+startingX, j+startingY);
+		}  // store the data in the new image
+	}	
+
+	return (new_image);
 }
 
 
@@ -436,13 +433,12 @@ void Image::loadPGM(const char* aFileName)
 		// Invalid format
 		if (image_type != "P2")
 		{
-			loadRAW(aFileName);
-			// Build the error message
-			//std::stringstream error_message;
-			//error_message << "Invalid file (\"" << aFileName << "\")";
+			//Build the error message
+			std::stringstream error_message;
+			error_message << "Invalid file (\"" << aFileName << "\")";
 
-			// Throw an error
-			//throw (error_message.str());
+			//Throw an error
+			throw (error_message.str());
 		}
 		// Valid format
 		else
@@ -587,78 +583,147 @@ void Image::savePGM(const std::string& aFileName)
 
 
 //-----------------------------------------------
-unsigned int Image::getWidth()
+unsigned int Image::getWidth() // accesses the width of the image
 //-----------------------------------------------
 {
-	return m_width;
+	return m_width; // returns the width of the image
 }
 
 
 //-----------------------------------------------
-unsigned int Image::getHeight()
+unsigned int Image::getHeight() // accesses the height of the image
 //-----------------------------------------------
 {
-	return m_height;
+	return m_height; // returns the height of the image
 }
 
 
 //-----------------------------------------------
-double Image::getAspectRatio() const
+float Image::getAspectRatio() const // ratio of the image
 //-----------------------------------------------
-{
-	return (double(m_width) / double(m_height));
+{ // divides the width by the height then round the result to 1 D.P
+	return floor(((float(m_width) / float(m_height))*10) + 0.5)/10; 
 }
 
 
 //-----------------------------------------------
-unsigned char Image::getPixel(unsigned int i, unsigned int j) const
+unsigned char Image::getPixel(unsigned int i, unsigned int j) const // gets the pixel knowing it's coordinates
 //-----------------------------------------------
-{
-	return (m_p_image[j * m_width + i]);
+{	
+	return (m_p_image[j * m_width + i]); // returns the value by traversing through the 1D arraw
 }
 
 
 //-----------------------------------------------
-void Image::setPixel(unsigned int i, unsigned int j, unsigned char aValue)
+void Image::setPixel(unsigned int i, unsigned int j, unsigned char aValue) // sets the pixel to a value
 //-----------------------------------------------
 {
-	m_p_image[j * m_width + i] = aValue;
+	m_p_image[j * m_width + i] = aValue; // traverses through the 1D array, changes that value to the new value
 }
 
 
 //-----------------------------------------------
-void Image::loadRAW(const std::string& aFileName)
+void Image::loadRAW(const std::string& aFileName) // loads and reads a file into image data
 //-----------------------------------------------
 {
-	std::string line;
-	float word;
-	std::ifstream myfile(aFileName);
-	int numberOfLines = 0;
-	int numberOfWords = 0;
-	if (myfile.is_open())
+	// Open the file
+	std::ifstream input_file(aFileName);
+
+	if (!input_file.is_open()) // if the file cannot be opened
 	{
-		while (getline(myfile, line))
-		{
+		// Build the error message
+		std::stringstream error_message;
+		error_message << "Cannot open the file \"" << aFileName << "\". It does not exist";
 
-			numberOfLines++;
-		}
-		myfile.close();
-		myfile.open(aFileName);
-		while (!myfile.eof())
-		{
-			myfile >> word;
-			numberOfWords++;
-		}
-
-		myfile.close();
+		// Throw an error
+		throw (error_message.str());
 	}
 
-	numberOfWords /= numberOfLines;
+	else // if the file can be opened
+	{		 
+		std::string line; // to store a line
+		float word; // to store each element of the line 
 
-	std::cout << numberOfLines << "\n";
-	std::cout << numberOfWords;
+		int numberOfLines = 0; // counts the number of lines
+		int numberOfWords = 0; // counts the number of elements 
+		while (getline(input_file, line)) // whilst you can get a line, get a line
+		{
+			numberOfLines++; // increment the line count by 1
+		}
+
+		input_file.clear(); // clears the state of the file from eof to good
+		input_file.seekg(0, std::ios::beg); // points at the start of the file
+
+		while (!input_file.eof()) // while not the end of the file
+		{ // whilst there are still words to process
+			input_file >> word; // process the word (numbers no surrounded by white space)
+			numberOfWords++; // add 1 to the word counter
+		}
+
+		input_file.clear(); // clears the state of the file from eof to good
+		input_file.seekg(0, std::ios::beg); // points at the start of the file
+
+		m_width = numberOfWords / numberOfLines; // divides the amount of words by the amount of lines
+											   // to get the total width of the file
+
+		m_height = numberOfLines; // stores the number of lines as the height of the file
+
+		m_p_image = new float[m_width * m_height]; // allocates memory to store data
+
+		for (int i = 0; i < m_width * m_height; i++)
+		{
+			input_file >> m_p_image[i]; // stores data from file into the array, element by element
+		}
+
+		input_file.close(); // close the file
+	}
+}
 
 
-	throw ("hello");
+//-----------------------------------------------
+void Image::saveRAW(const std::string & aFileName) // saves data from an image class into a file
+//-----------------------------------------------
+{
+	std::ofstream output_file(aFileName);
+
+	// The file does not exist
+	if (!output_file.is_open())
+	{
+		// Build the error message
+		std::stringstream error_message;
+		error_message << "Cannot create the file \"" << aFileName << "\"";
+
+		// Throw an error
+		throw (error_message.str());
+	}
+
+	else 
+	{
+		for (unsigned int j = 0; j < m_height; ++j)
+		{
+			// Process every column
+			for (unsigned int i = 0; i < m_width; ++i)
+			{
+				// Process the pixel
+				int pixel_value(m_p_image[j * m_width + i]);
+				pixel_value = std::max(0, pixel_value);
+				pixel_value = std::min(255, pixel_value);
+
+				output_file << pixel_value;
+
+				// It is not the last pixel of the line
+				if (i < (m_width - 1))
+				{
+					output_file << " ";
+				}
+			}
+
+			// It is not the last line of the image
+			if (j < (m_height - 1))
+			{
+				output_file << std::endl;
+			}
+		}
+	}
 
 }

@@ -7,24 +7,13 @@
 *
 *	@file		Image.h
 *
-*	@brief		BRIEF DESCRIPTION ABOUT THE CONTENT OF THE FILE.
+*	@brief		This file contains only the function declarions for the Image class.
 *
 *	@version	1.0
+*   
+*	@date		9/11/2015
 *
-*   @todo       Add an accessor on the width of the image
-*   @todo       Add an accessor on the height of the image;
-*   @todo       Add a method returning the aspect ratio;
-*   @todo       Add a method to set the value of a given pixel;
-*   @todo       Add a method returning the value of a given pixel;
-*   @todo       Add a method to read an image from a RAW file;
-*   @todo       Add a method to write an image from a RAW file;
-*   @todo       Add a method returning the smallest value in the image;
-*   @todo       Add a method normlising the image between 0 and 1;
-*   @todo       Add a method returning a region of interest.
-*
-*	@date		DATE HERE
-*
-*	@author		YOUR NAME HERE
+*	@author		Michael. P. J. Smith
 *
 *
 ********************************************************************************
@@ -278,6 +267,7 @@ public:
 	unsigned int getWidth();
 
 
+	//------------------------------------------------------------------------
 	/// Accesses and returns the height of the current image
 	/**
 	* @return the total height
@@ -292,7 +282,7 @@ public:
 	* @return the total height
 	*/
 	//------------------------------------------------------------------------
-	double getAspectRatio() const;
+	float getAspectRatio() const;
 
     
 	//------------------------------------------------------------------------
@@ -317,7 +307,52 @@ public:
 	void setPixel(unsigned int i, unsigned int j, unsigned char aValue);
 
 
+	//------------------------------------------------------------------------
+	/// Load the image from a RAW file
+	/**
+	* @param aFileName: the name of the file to read
+	*/
+	//------------------------------------------------------------------------
 	void loadRAW(const std::string& aFileName);
+
+
+	//------------------------------------------------------------------------
+	/// Save the image in a RAW file
+	/**
+	* @param aFileName: the name of the file to write
+	*/
+	//------------------------------------------------------------------------
+	void saveRAW(const std::string& aFileName);
+
+
+	//------------------------------------------------------------------------
+	/// Compute the minimum pixel value in the image
+	/**
+	* @return the minimum pixel
+	*/
+	//------------------------------------------------------------------------
+	float getMinValue() const;
+
+
+	//------------------------------------------------------------------------
+	/// Normalises the image between 0 and 1
+	/**
+	* 
+	*/
+	//------------------------------------------------------------------------
+	void normaliseImage() const;
+
+	//------------------------------------------------------------------------
+	/// Gets a region of interest from the  image
+	/**
+	* @param startingX region starting x coordinate
+	* @param endingX region ending x coordinate
+	* @param startingY region starting y coordinate
+	* @param endingY region ending y coordinate
+	*/
+	//------------------------------------------------------------------------
+	Image getROI(unsigned int startingX, unsigned int endingX, unsigned int startingY, unsigned int endingY);
+
 
 //******************************************************************************
 private:
