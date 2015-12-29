@@ -1,0 +1,16 @@
+﻿Build started 09/11/2015 11:27:12.
+     1>Project "C:\Users\reola\Documents\GitHub\Lab 3\OpenGL Template\OpenGL Template.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt ..\..\..\..\Downloads\inflate.cpp Scene.cpp WindowingSystem.cpp
+         WindowingSystem.cpp
+     1>c:\users\reola\documents\github\lab 3\opengl template\windowingsystem.h(5): fatal error C1083: Cannot open include file: 'bunny.h': No such file or directory
+         Scene.cpp
+     1>c:\users\reola\documents\github\lab 3\opengl template\windowingsystem.h(5): fatal error C1083: Cannot open include file: 'bunny.h': No such file or directory
+         inflate.cpp
+     1>c:\users\reola\downloads\inflate.cpp(10): fatal error C1083: Cannot open include file: 'WindowingSystem.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\reola\Documents\GitHub\Lab 3\OpenGL Template\OpenGL Template.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.72

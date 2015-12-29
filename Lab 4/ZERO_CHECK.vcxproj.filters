@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\CMakeFiles\7a8da4d6a0f6072f92624858eaafbf39\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3334C3CE-4396-4A0E-B857-04144AC085D9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿Build started 24/11/2015 12:25:11.
+     1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\numerical_inaccuracy.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\cmake\..\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"numerical_inaccuracy.dir\Debug\\" /Fd"numerical_inaccuracy.dir\Debug\vc140.pdb" /Gd /TP /errorReport:prompt "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\numerical_inaccuracy.cpp"
+         numerical_inaccuracy.cpp
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\numerical_inaccuracy.cpp(29): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\numerical_inaccuracy.cpp(38): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\numerical_inaccuracy.cpp(39): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\numerical_inaccuracy.cpp(42): warning C4305: 'initializing': truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\Debug\numerical_inaccuracy.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/Debug/numerical_inaccuracy.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/Debug/numerical_inaccuracy.lib" /MACHINE:X64  /machine:x64 /debug numerical_inaccuracy.dir\Debug\numerical_inaccuracy.obj
+         numerical_inaccuracy.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\Debug\numerical_inaccuracy.exe
+     1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\numerical_inaccuracy.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.18

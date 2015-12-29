@@ -1,0 +1,81 @@
+﻿Build started 16/12/2015 23:19:44.
+     1>Project "E:\Dropbox\VisionDSK\answer\assignment1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IE:\Dropbox\VisionDSK\answer\cmake\..\include /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"assignment1.dir\Debug\\" /Fd"assignment1.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt E:\Dropbox\VisionDSK\answer\src\Image.cpp E:\Dropbox\VisionDSK\answer\src\test.cpp
+         Image.cpp
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(455): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(532): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(621): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(756): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(808): warning C4244: 'initializing': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1082): warning C4244: 'return': conversion from 'unsigned int' to 'float', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1188): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1189): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1190): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1192): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1193): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1194): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1196): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1197): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1198): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>E:\Dropbox\VisionDSK\answer\src\Image.cpp(1201): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2230): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2216): note: see declaration of 'std::_Copy_impl'
+         E:\Dropbox\VisionDSK\answer\src\Image.cpp(65): note: see reference to function template instantiation '_OutIt std::copy<float*,float*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _InIt=float *
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2216): note: see declaration of 'std::_Copy_impl'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2811): warning C4996: 'std::_Fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2797): note: see declaration of 'std::_Fill_n'
+         E:\Dropbox\VisionDSK\answer\src\Image.cpp(106): note: see reference to function template instantiation '_OutIt std::fill_n<float*,unsigned int,int>(_OutIt,_Diff,const _Ty &)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Diff=unsigned int,
+                     _Ty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2216): note: see declaration of 'std::_Copy_impl'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2729): warning C4244: '=': conversion from 'const int' to 'float', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2779): note: see reference to function template instantiation '_OutIt std::_Fill_n<_Iter,_Diff,_Ty>(_OutIt,_Diff,const _Ty &)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Iter=float *,
+                     _Diff=unsigned int,
+                     _Ty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2801): note: see reference to function template instantiation '_OutIt std::_Fill_n1<_OutIt,_Diff,_Ty>(_OutIt,_Diff,const _Ty &,std::random_access_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Diff=unsigned int,
+                     _Ty=int
+                 ]
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2811): note: see reference to function template instantiation '_OutIt std::_Fill_n<_OutIt,_Diff,_Ty>(_OutIt,_Diff,const _Ty &,std::false_type)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Diff=unsigned int,
+                     _Ty=int
+                 ]
+         E:\Dropbox\VisionDSK\answer\src\Image.cpp(106): note: see reference to function template instantiation '_OutIt std::fill_n<float*,unsigned int,int>(_OutIt,_Diff,const _Ty &)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     _Diff=unsigned int,
+                     _Ty=int
+                 ]
+         test.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Dropbox\VisionDSK\answer\Debug\assignment1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:/Dropbox/VisionDSK/answer/Debug/assignment1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/Dropbox/VisionDSK/answer/Debug/assignment1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug assignment1.dir\Debug\Image.obj
+         assignment1.dir\Debug\test.obj
+         assignment1.vcxproj -> E:\Dropbox\VisionDSK\answer\Debug\assignment1.exe
+     1>Done Building Project "E:\Dropbox\VisionDSK\answer\assignment1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.50

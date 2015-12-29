@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/reola/Downloads/ICP3038-Assignment1/ICP3038-Assignment1/cmake
+# Install script for directory: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/ICP3038-Assignment1/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/ICP3038-Assignment1")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ICP3038-Assignment1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/reola/Documents/GitHub/Computer-Vision/A1/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

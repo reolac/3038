@@ -1,4 +1,4 @@
-The system is: Windows - 6.2 - AMD64
+The system is: Windows - 6.2.9200 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler:  
 Build flags: 
@@ -9,40 +9,40 @@ The output was:
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:26.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\3.3.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:38.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.4.0-rc1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdC.tlog\".
 InitializeBuildStatus:
   Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /errorReport:queue CMakeCCompilerId.c
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
   CMakeCCompilerId.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\3.3.2\CompilerIdC\.\CompilerIdC.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.4.0-rc1\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
-  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\cl.exe
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\3.3.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.4.0-rc1\CompilerIdC\CompilerIdC.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.03
+Time Elapsed 00:00:00.36
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/3.3.2/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/3.4.0-rc1/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -54,231 +54,567 @@ The output was:
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:27.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\3.3.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:39.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.4.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdCXX.tlog\".
 InitializeBuildStatus:
   Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /errorReport:queue CMakeCXXCompilerId.cpp
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
   CMakeCXXCompilerId.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\3.3.2\CompilerIdCXX\.\CompilerIdCXX.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.4.0-rc1\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
-  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\cl.exe
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\3.3.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.4.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.54
+Time Elapsed 00:00:00.37
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/3.3.2/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/3.4.0-rc1/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_88d43.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_dbfa3.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:28.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_88d43.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:39.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_dbfa3.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_88d43.dir\Debug\".
-  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_88d43.dir\Debug\cmTC_88d43.tlog\".
+  Creating directory "cmTC_dbfa3.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_dbfa3.dir\Debug\cmTC_dbfa3.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_88d43.dir\Debug\cmTC_88d43.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_dbfa3.dir\Debug\cmTC_dbfa3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88d43.dir\Debug\\" /Fd"cmTC_88d43.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\testCCompiler.c"
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x64
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dbfa3.dir\Debug\\" /Fd"cmTC_dbfa3.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88d43.dir\Debug\\" /Fd"cmTC_88d43.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\testCCompiler.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dbfa3.dir\Debug\\" /Fd"cmTC_dbfa3.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCCompiler.c"
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_88d43.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_88d43.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_88d43.lib" /MACHINE:X64  /machine:x64 /debug cmTC_88d43.dir\Debug\testCCompiler.obj
-  cmTC_88d43.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_88d43.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_dbfa3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_dbfa3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_dbfa3.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_dbfa3.dir\Debug\testCCompiler.obj
+  cmTC_dbfa3.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_dbfa3.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_88d43.dir\Debug\cmTC_88d43.tlog\unsuccessfulbuild".
-  Touching "cmTC_88d43.dir\Debug\cmTC_88d43.tlog\cmTC_88d43.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_88d43.vcxproj" (default targets).
+  Deleting file "cmTC_dbfa3.dir\Debug\cmTC_dbfa3.tlog\unsuccessfulbuild".
+  Touching "cmTC_dbfa3.dir\Debug\cmTC_dbfa3.tlog\cmTC_dbfa3.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_dbfa3.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.89
+Time Elapsed 00:00:00.45
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_03b1b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_93ad1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:29.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_03b1b.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:40.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_93ad1.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_03b1b.dir\Debug\".
-  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_03b1b.dir\Debug\cmTC_03b1b.tlog\".
+  Creating directory "cmTC_93ad1.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_93ad1.dir\Debug\cmTC_93ad1.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_03b1b.dir\Debug\cmTC_03b1b.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_93ad1.dir\Debug\cmTC_93ad1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03b1b.dir\Debug\\" /Fd"cmTC_03b1b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x64
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_93ad1.dir\Debug\\" /Fd"cmTC_93ad1.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03b1b.dir\Debug\\" /Fd"cmTC_03b1b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_93ad1.dir\Debug\\" /Fd"cmTC_93ad1.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_03b1b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_03b1b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_03b1b.lib" /MACHINE:X64  /machine:x64 /debug cmTC_03b1b.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_03b1b.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_03b1b.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_93ad1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_93ad1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_93ad1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_93ad1.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_93ad1.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_93ad1.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_03b1b.dir\Debug\cmTC_03b1b.tlog\unsuccessfulbuild".
-  Touching "cmTC_03b1b.dir\Debug\cmTC_03b1b.tlog\cmTC_03b1b.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_03b1b.vcxproj" (default targets).
+  Deleting file "cmTC_93ad1.dir\Debug\cmTC_93ad1.tlog\unsuccessfulbuild".
+  Touching "cmTC_93ad1.dir\Debug\cmTC_93ad1.tlog\cmTC_93ad1.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_93ad1.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.62
+Time Elapsed 00:00:00.44
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_509b8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_82090.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:30.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_509b8.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:41.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_82090.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_509b8.dir\Debug\".
-  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_509b8.dir\Debug\cmTC_509b8.tlog\".
+  Creating directory "cmTC_82090.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_82090.dir\Debug\cmTC_82090.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_509b8.dir\Debug\cmTC_509b8.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_82090.dir\Debug\cmTC_82090.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_509b8.dir\Debug\\" /Fd"cmTC_509b8.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x64
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_82090.dir\Debug\\" /Fd"cmTC_82090.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_509b8.dir\Debug\\" /Fd"cmTC_509b8.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_82090.dir\Debug\\" /Fd"cmTC_82090.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_509b8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_509b8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_509b8.lib" /MACHINE:X64  /machine:x64 /debug cmTC_509b8.dir\Debug\testCXXCompiler.obj
-  cmTC_509b8.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_509b8.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_82090.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_82090.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_82090.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_82090.dir\Debug\testCXXCompiler.obj
+  cmTC_82090.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_82090.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_509b8.dir\Debug\cmTC_509b8.tlog\unsuccessfulbuild".
-  Touching "cmTC_509b8.dir\Debug\cmTC_509b8.tlog\cmTC_509b8.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_509b8.vcxproj" (default targets).
+  Deleting file "cmTC_82090.dir\Debug\cmTC_82090.tlog\unsuccessfulbuild".
+  Touching "cmTC_82090.dir\Debug\cmTC_82090.tlog\cmTC_82090.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_82090.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.63
+Time Elapsed 00:00:00.42
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_f5c70.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_73ad4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:30.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_f5c70.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:41.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_73ad4.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_f5c70.dir\Debug\".
-  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_f5c70.dir\Debug\cmTC_f5c70.tlog\".
+  Creating directory "cmTC_73ad4.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_73ad4.dir\Debug\cmTC_73ad4.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_f5c70.dir\Debug\cmTC_f5c70.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_73ad4.dir\Debug\cmTC_73ad4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f5c70.dir\Debug\\" /Fd"cmTC_f5c70.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x64
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73ad4.dir\Debug\\" /Fd"cmTC_73ad4.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f5c70.dir\Debug\\" /Fd"cmTC_f5c70.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73ad4.dir\Debug\\" /Fd"cmTC_73ad4.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_f5c70.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_f5c70.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_f5c70.lib" /MACHINE:X64  /machine:x64 /debug cmTC_f5c70.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_f5c70.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_f5c70.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_73ad4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_73ad4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_73ad4.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_73ad4.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_73ad4.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_73ad4.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_f5c70.dir\Debug\cmTC_f5c70.tlog\unsuccessfulbuild".
-  Touching "cmTC_f5c70.dir\Debug\cmTC_f5c70.tlog\cmTC_f5c70.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_f5c70.vcxproj" (default targets).
+  Deleting file "cmTC_73ad4.dir\Debug\cmTC_73ad4.tlog\unsuccessfulbuild".
+  Touching "cmTC_73ad4.dir\Debug\cmTC_73ad4.tlog\cmTC_73ad4.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_73ad4.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.60
+Time Elapsed 00:00:00.48
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_31424.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_c186b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.23107.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 27/10/2015 11:08:31.
-Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_31424.vcxproj" on node 1 (default targets).
+Build started 09/11/2015 17:00:42.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_c186b.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_31424.dir\Debug\".
-  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_31424.dir\Debug\cmTC_31424.tlog\".
+  Creating directory "cmTC_c186b.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_c186b.dir\Debug\cmTC_c186b.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_31424.dir\Debug\cmTC_31424.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_c186b.dir\Debug\cmTC_c186b.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_31424.dir\Debug\\" /Fd"cmTC_31424.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\feature_tests.cxx"
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x64
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c186b.dir\Debug\\" /Fd"cmTC_c186b.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\feature_tests.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_31424.dir\Debug\\" /Fd"cmTC_31424.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\feature_tests.cxx"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c186b.dir\Debug\\" /Fd"cmTC_c186b.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\feature_tests.cxx"
   
   feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_31424.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_31424.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Assignment 1/CMakeFiles/CMakeTmp/Debug/cmTC_31424.lib" /MACHINE:X64  /machine:x64 /debug cmTC_31424.dir\Debug\feature_tests.obj
-  cmTC_31424.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\Debug\cmTC_31424.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_c186b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_c186b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_c186b.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_c186b.dir\Debug\feature_tests.obj
+  cmTC_c186b.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_c186b.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_31424.dir\Debug\cmTC_31424.tlog\unsuccessfulbuild".
-  Touching "cmTC_31424.dir\Debug\cmTC_31424.tlog\cmTC_31424.lastbuildstate".
-Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Assignment 1\CMakeFiles\CMakeTmp\cmTC_31424.vcxproj" (default targets).
+  Deleting file "cmTC_c186b.dir\Debug\cmTC_c186b.tlog\unsuccessfulbuild".
+  Touching "cmTC_c186b.dir\Debug\cmTC_c186b.tlog\cmTC_c186b.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_c186b.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.60
+Time Elapsed 00:00:00.43
+
+
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+The system is: Windows - 6.2 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: ;/DWIN32;/D_WINDOWS;/W3
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:44.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.3.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.3.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.3.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.84
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/3.3.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: ;/DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:45.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.3.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.3.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\3.3.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.65
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/3.3.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_f054e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:46.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_f054e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_f054e.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f054e.dir\Debug\cmTC_f054e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_f054e.dir\Debug\cmTC_f054e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f054e.dir\Debug\\" /Fd"cmTC_f054e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f054e.dir\Debug\\" /Fd"cmTC_f054e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCCompiler.c"
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_f054e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_f054e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_f054e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_f054e.dir\Debug\testCCompiler.obj
+  cmTC_f054e.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_f054e.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_f054e.dir\Debug\cmTC_f054e.tlog\unsuccessfulbuild".
+  Touching "cmTC_f054e.dir\Debug\cmTC_f054e.tlog\cmTC_f054e.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_f054e.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.88
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3e8c6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:47.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_3e8c6.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_3e8c6.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_3e8c6.dir\Debug\cmTC_3e8c6.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_3e8c6.dir\Debug\cmTC_3e8c6.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3e8c6.dir\Debug\\" /Fd"cmTC_3e8c6.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3e8c6.dir\Debug\\" /Fd"cmTC_3e8c6.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_3e8c6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_3e8c6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_3e8c6.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_3e8c6.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_3e8c6.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_3e8c6.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_3e8c6.dir\Debug\cmTC_3e8c6.tlog\unsuccessfulbuild".
+  Touching "cmTC_3e8c6.dir\Debug\cmTC_3e8c6.tlog\cmTC_3e8c6.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_3e8c6.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.69
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_006df.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:48.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_006df.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_006df.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_006df.dir\Debug\cmTC_006df.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_006df.dir\Debug\cmTC_006df.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_006df.dir\Debug\\" /Fd"cmTC_006df.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_006df.dir\Debug\\" /Fd"cmTC_006df.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_006df.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_006df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_006df.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_006df.dir\Debug\testCXXCompiler.obj
+  cmTC_006df.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_006df.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_006df.dir\Debug\cmTC_006df.tlog\unsuccessfulbuild".
+  Touching "cmTC_006df.dir\Debug\cmTC_006df.tlog\cmTC_006df.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_006df.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.81
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_a4e39.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:49.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_a4e39.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_a4e39.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_a4e39.dir\Debug\cmTC_a4e39.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_a4e39.dir\Debug\cmTC_a4e39.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a4e39.dir\Debug\\" /Fd"cmTC_a4e39.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a4e39.dir\Debug\\" /Fd"cmTC_a4e39.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_a4e39.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_a4e39.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_a4e39.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_a4e39.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_a4e39.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_a4e39.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_a4e39.dir\Debug\cmTC_a4e39.tlog\unsuccessfulbuild".
+  Touching "cmTC_a4e39.dir\Debug\cmTC_a4e39.tlog\cmTC_a4e39.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_a4e39.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.69
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_1aef0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.23107.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 10/11/2015 11:22:50.
+Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_1aef0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_1aef0.dir\Debug\".
+  Creating directory "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_1aef0.dir\Debug\cmTC_1aef0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_1aef0.dir\Debug\cmTC_1aef0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1aef0.dir\Debug\\" /Fd"cmTC_1aef0.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\feature_tests.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23026 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1aef0.dir\Debug\\" /Fd"cmTC_1aef0.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_1aef0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_1aef0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/CMakeTmp/Debug/cmTC_1aef0.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_1aef0.dir\Debug\feature_tests.obj
+  cmTC_1aef0.vcxproj -> C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\Debug\cmTC_1aef0.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_1aef0.dir\Debug\cmTC_1aef0.tlog\unsuccessfulbuild".
+  Touching "cmTC_1aef0.dir\Debug\cmTC_1aef0.tlog\cmTC_1aef0.lastbuildstate".
+Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\A1\CMakeFiles\CMakeTmp\cmTC_1aef0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.72
 
 
     Feature record: CXX_FEATURE:1cxx_alias_templates

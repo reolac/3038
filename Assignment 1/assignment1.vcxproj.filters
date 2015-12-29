@@ -1,27 +1,27 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\reola\Downloads\ICP3038-Assignment1\ICP3038-Assignment1\src\Image.cpp">
+    <ClCompile Include="ICP3038-Assignment1\src\Image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\reola\Downloads\ICP3038-Assignment1\ICP3038-Assignment1\src\test.cpp">
+    <ClCompile Include="ICP3038-Assignment1\src\test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\reola\Downloads\ICP3038-Assignment1\ICP3038-Assignment1\include\Image.h">
+    <ClInclude Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\include\Image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\reola\Downloads\ICP3038-Assignment1\ICP3038-Assignment1\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\reola\Documents\GitHub\Computer-Vision\A1\ICP3038-Assignment1\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{0AC3F15E-A062-41D8-8F7A-7F25B7450ACE}</UniqueIdentifier>
+      <UniqueIdentifier>{4AB1F4F4-83B3-4DBB-9356-BFF974466F86}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{15ACD7BE-0E7B-467F-9A06-347FEBEDCD94}</UniqueIdentifier>
+      <UniqueIdentifier>{5A414656-31D2-4F9F-8752-5C77609D4722}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

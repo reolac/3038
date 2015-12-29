@@ -1,0 +1,24 @@
+﻿Build started 24/11/2015 12:09:03.
+     1>Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\test_my_vector.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\cmake\..\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"test_my_vector.dir\Debug\\" /Fd"test_my_vector.dir\Debug\vc140.pdb" /Gd /TP /errorReport:prompt numerical_inaccuracy.cpp test_numerical_inaccuracy.cpp "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\MyVector.cpp"
+         numerical_inaccuracy.cpp
+         test_numerical_inaccuracy.cpp
+     1>test_numerical_inaccuracy.cpp(11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>test_numerical_inaccuracy.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>test_numerical_inaccuracy.cpp(15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+         MyVector.cpp
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\src\MyVector.cpp(133): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\Debug\test_my_vector.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/Debug/test_my_vector.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/Debug/test_my_vector.lib" /MACHINE:X64  /machine:x64 /debug test_my_vector.dir\Debug\numerical_inaccuracy.obj
+         test_my_vector.dir\Debug\test_numerical_inaccuracy.obj
+         test_my_vector.dir\Debug\test_my_vector.obj
+         test_my_vector.dir\Debug\MyVector.obj
+     1>test_my_vector.obj : error LNK2005: main already defined in test_numerical_inaccuracy.obj
+     1>C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\Debug\test_my_vector.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "C:\Users\reola\Documents\GitHub\Computer-Vision\Lab 4\test_my_vector.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.00

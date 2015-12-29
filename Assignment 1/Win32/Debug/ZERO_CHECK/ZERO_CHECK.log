@@ -1,0 +1,26 @@
+﻿Build started 24/11/2015 11:11:07.
+     1>Project "C:\Users\reola\Dropbox\A1\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake is re-running because C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/generate.stamp is out-of-date.
+           the file 'C:/Program Files (x86)/CMake/share/cmake-3.4/Modules/CMakeSystemSpecificInitialize.cmake'
+           is newer than 'C:/Users/reola/Documents/GitHub/Computer-Vision/A1/CMakeFiles/generate.stamp.depend'
+           result='0'
+         CMake Warning (dev) in CMakeLists.txt:
+           No cmake_minimum_required command is present.  A line of code such as
+         
+             cmake_minimum_required(VERSION 3.3)
+         
+           should be added at the top of the file.  The version specified may be lower
+           if you wish to support older CMake versions for this project.  For more
+           information run "cmake --help-policy CMP0000".
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         -- Configuring done
+         -- Generating done
+         -- Build files have been written to: C:/Users/reola/Documents/GitHub/Computer-Vision/A1
+     1>Done Building Project "C:\Users\reola\Dropbox\A1\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.81

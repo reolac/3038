@@ -1,0 +1,10 @@
+﻿Build started 14/12/2015 14:26:25.
+     1>Project "E:\Dropbox\VisionDSK\answer\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because E:/Dropbox/VisionDSK/answer/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "E:\Dropbox\VisionDSK\answer\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.37

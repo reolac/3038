@@ -1,0 +1,4 @@
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/CMakeFiles/ALL_BUILD.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/CMakeFiles/numerical_inaccuracy.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/CMakeFiles/ZERO_CHECK.dir
+C:/Users/reola/Documents/GitHub/Computer-Vision/Lab 4/CMakeFiles/test_my_vector.dir
